@@ -1,0 +1,13 @@
+<p>This is your Cookbook</p>
+<ul>
+  <% @recipes.each_with_index do |recipe, index| %>
+    <li>
+      <%= recipe.name %> - <a href="/recipes/<%= index %>">Destroy</a>
+    </li>
+  <% end %>
+</ul>
+<p>What do you want to do</p>
+<ul>
+  <li><a href="/add_a_recipe">Add a recipe</a></li>
+  <li><a href="import_from_internet">Import recipes from the Internet</a></li>
+</ul>
